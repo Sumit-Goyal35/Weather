@@ -1,0 +1,100 @@
+*{margin:0;padding:0;box-sizing:border-box;font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
+
+/* —— GLOBAL —— */
+body{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  min-height:100vh;
+  background:linear-gradient(135deg,#4facfe 0%,#00f2fe 100%);
+  color:#fff;
+}
+
+/* Card container */
+.weather-card{
+  width:320px;
+  background:rgba(255,255,255,0.15);
+  
+  border-radius:18px;
+  padding:1.8rem 1.6rem 2.2rem;
+  box-shadow:0 20px 40px rgba(0,0,0,0.2);
+}
+
+/* City + date */
+.header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.city{
+  font-size:1.5rem;
+  font-weight:600;
+}
+.date{
+  font-size:0.88rem;
+  opacity:0.8;
+}
+
+/* Current temperature block */
+.current{
+  display:flex;
+  align-items:center;
+  margin:1.6rem 0;
+}
+.current .icon{
+  width:72px;
+  height:72px;
+  margin-right:1rem;
+}
+.current .temp{
+  font-size:4rem;
+  font-weight:700;
+  line-height:1;
+}
+
+/* Extra stats */
+.stats{
+  display:flex;
+  justify-content:space-between;
+  margin-top:1.2rem;
+}
+.stat{
+  text-align:center;
+}
+.stat .value{
+  font-weight:600;
+  font-size:1rem;
+}
+.stat .label{
+  font-size:0.75rem;
+  opacity:0.8;
+  letter-spacing:0.5px;
+}
+
+/* Forecast strip */
+.forecast{
+  margin-top:1.8rem;
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:0.5rem;
+}
+.day{
+  background:rgba(255,255,255,0.12);
+  padding:0.7rem 0.4rem;
+  border-radius:12px;
+  text-align:center;
+}
+.day .icon{
+  width:32px;height:32px;margin:0 auto 0.4rem;
+}
+.day .temp{
+  font-size:0.9rem;font-weight:600;
+}
+.day .label{font-size:0.7rem;opacity:0.8}
+
+/* —— SMALL DEVICES —— */
+@media(max-width:380px){
+  .weather-card{width:90vw;padding:1.5rem}
+  .current .temp{font-size:3.2rem}
+  .forecast{grid-template-columns:repeat(4,1fr)}
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Minimal Weather UI</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <article class="weather-card">
+    
+    <!-- Header: City & Date -->
+    <div class="header">
+      <span class="city">San Francisco</span>
+      <span class="date">Fri 12 Sep</span>
+    </div>
+
+    <!-- Current Weather -->
+    <div class="current">
+      <!-- Placeholder sun icon (SVG) -->
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="4"/>
+        <g stroke-width="1.5">
+          <line x1="12" y1="1" x2="12" y2="3"/>
+          <line x1="12" y1="21" x2="12" y2="23"/>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+          <line x1="1" y1="12" x2="3" y2="12"/>
+          <line x1="21" y1="12" x2="23" y2="12"/>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+        </g>
+      </svg>
+
+      <span class="temp">72°</span>
+    </div>
+
+    <!-- Extra Stats -->
+    <section class="stats">
+      <div class="stat">
+        <div class="value">15%</div>
+        <div class="label">Humidity</div>
+      </div>
+      <div class="stat">
+        <div class="value">5 mph</div>
+        <div class="label">Wind</div>
+      </div>
+      <div class="stat">
+        <div class="value">1015 hPa</div>
+        <div class="label">Pressure</div>
+      </div>
+    </section>
+
+    <!-- 5-Day Forecast -->
+    <section class="forecast">
+      <div class="day">
+        <svg class="icon" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 15a4 4 0 0 0 4 4h10a4 4 0 1 0-1-7.87 5 5 0 0 0-9.9-1.26A4 4 0 0 0 3 15z"/>
+        </svg>
+        <div class="temp">70°</div>
+        <div class="label">Sat</div>
+      </div>
+
+      <div class="day">
+        <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M19 17.47A2.94 2.94 0 0 1 17.57 19H6.43A2.94 2.94 0 0 1 5 17.47c0-1.05.55-2.14 1.46-2.71L12 10l5.54 4.76A3.28 3.28 0 0 1 19 17.47z"/>
+        </svg>
+        <div class="temp">68°</div>
+        <div class="label">Sun</div>
+      </div>
+
+      <div class="day">
+        <svg class="icon" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 18h18M3 12h18M3 6h18"/>
+        </svg>
+        <div class="temp">66°</div>
+        <div class="label">Mon</div>
+      </div>
+
+      <div class="day">
+        <svg class="icon" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="16 17 21 12 16 7"/>
+          <polyline points="8 17 3 12 8 7"/>
+        </svg>
+        <div class="temp">64°</div>
+        <div class="label">Tue</div>
+      </div>
+
+      <div class="day">
+        <svg class="icon" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"/>
+          <path d="M12 6v6l4 2"/>
+        </svg>
+        <div class="temp">65°</div>
+        <div class="label">Wed</div>
+      </div>
+    </section>
+    
+  </article>
+</body>
+</html>
